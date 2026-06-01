@@ -34,7 +34,7 @@ const Sidebar = ({ isOpen = false, onClose }: SidebarProps) => {
         >
           <X size={20} />
         </button>
-      <div className="p-6 flex flex-col items-center">
+      <div className="p-6 pt-12 flex flex-col items-center">
         <div className="flex flex-col items-center mb-4 text-center">
           <img src="/logo.png" alt="Logo" className="w-40 h-auto object-contain mt-2 drop-shadow-sm" />
         </div>
