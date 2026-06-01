@@ -228,6 +228,11 @@ const Kuis = () => {
           <label className="block text-sm font-bold text-gray-800 mb-3">
             🔑 Masukkan Kode Unik
           </label>
+          <div className="bg-white p-3 rounded-xl border border-yellow-200 mb-4 inline-block shadow-sm">
+            <p className="text-sm font-bold text-yellow-600 flex items-center gap-2">
+              💡 Clue: {currentQ.clue || "Perhatikan petunjuk soal untuk menemukan kode!"}
+            </p>
+          </div>
           <input 
             type="text" 
             value={uniqueCode}
