@@ -60,19 +60,7 @@ const Sidebar = ({ isOpen = false, onClose }: SidebarProps) => {
             </>
           );
 
-          if (item.external) {
-            return (
-              <a 
-                key={index} 
-                href={item.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={className}
-              >
-                {content}
-              </a>
-            );
-          }
+
 
           return (
             <Link 

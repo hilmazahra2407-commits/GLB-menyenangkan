@@ -21,7 +21,7 @@ interface Message {
 const ChatAI = () => {
   const { user } = useAuth();
   const [messages, setMessages] = useState<Message[]>([
-    { id: 1, text: `Halo ${user?.name}! Aku adalah Asisten AI yang jago Fisika, khususnya materi Gerak Lurus Beraturan (GLB). Ada yang mau ditanyakan?`, sender: 'ai' }
+    { id: 1, text: `Halo ${user?.user_metadata?.full_name || 'Siswa'}! Aku adalah Asisten AI yang jago Fisika, khususnya materi Gerak Lurus Beraturan (GLB). Ada yang mau ditanyakan?`, sender: 'ai' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);

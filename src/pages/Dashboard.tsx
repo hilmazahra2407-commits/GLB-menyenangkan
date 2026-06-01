@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { BookOpen, Edit3, MonitorPlay, ChevronRight, Star } from 'lucide-react';
+import { BookOpen, MonitorPlay, ChevronRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const Dashboard = () => {
@@ -22,14 +22,13 @@ const Dashboard = () => {
     } catch (e) {}
   }
   const materiFinished = localStorage.getItem('glb_materi_finished') === 'true';
-  const progressPercent = materiFinished ? 100 : Math.round((completedSteps.length / 5) * 100) || 0;
 
   return (
     <div className="flex-1 flex flex-col pt-6 pb-12 w-full">
       <div className="mb-8">
         <h1 className="text-gray-500 text-lg mb-1 font-medium">Selamat datang kembali,</h1>
         <h2 className="text-4xl font-bold text-[#c35e80]">
-          {user?.name || 'Learner'}!
+          {user?.user_metadata?.full_name || 'Learner'}!
         </h2>
         <p className="text-gray-600 mt-2">Belajar GLB jadi lebih mudah dan menyenangkan!</p>
       </div>

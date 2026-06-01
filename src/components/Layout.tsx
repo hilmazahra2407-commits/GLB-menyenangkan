@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
+import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LogOut, Bell, User as UserIcon, Menu } from 'lucide-react';
+import { Bell, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Sidebar from './Sidebar';
 
@@ -93,7 +93,7 @@ export const Layout = () => {
               
               <div className="flex items-center gap-3 pl-4 border-l border-gray-200">
                 <div className="w-10 h-10 bg-[#e0f0ff] rounded-full flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
-                  <img src={`https://ui-avatars.com/api/?name=${user?.name || 'User'}&background=e0f0ff&color=4785c4`} alt="User avatar" className="w-full h-full object-cover" />
+                  <img src={`https://ui-avatars.com/api/?name=${user?.user_metadata?.full_name || 'User'}&background=e0f0ff&color=4785c4`} alt="User avatar" className="w-full h-full object-cover" />
                 </div>
                 <button 
                   onClick={handleLogout}
