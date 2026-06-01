@@ -6,22 +6,7 @@ import { useAuth } from '../context/AuthContext';
 const Dashboard = () => {
   const { user } = useAuth();
   
-  // Read progress from localStorage
-  const completedStepsStr = localStorage.getItem('glb_completed_steps');
-  let completedSteps: number[] = [];
-  if (completedStepsStr) {
-    try {
-      const parsed = JSON.parse(completedStepsStr);
-      if (Array.isArray(parsed)) {
-        completedSteps = parsed;
-      } else {
-        // Migration or corrupted data
-        completedSteps = [];
-        localStorage.removeItem('glb_completed_steps');
-      }
-    } catch (e) {}
-  }
-  const materiFinished = localStorage.getItem('glb_materi_finished') === 'true';
+  // Variables for progress were removed
 
   return (
     <div className="flex-1 flex flex-col pt-6 pb-12 w-full">
