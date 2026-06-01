@@ -4,7 +4,7 @@ import { ShoppingCart, Mail, X } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Aminah Nur Azizah',
+    name: 'Aminah Nurazizah',
     email: 'aminahnurazizah32@gmail.com',
     product: 'Papan Vektor pada Gerak Parabola',
     price: 'Rp 120.000 - Rp 250.000',
