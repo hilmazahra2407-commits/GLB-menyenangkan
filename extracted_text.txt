@@ -1,0 +1,97 @@
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.26 (1).jpeg ---
+
+BESARAN
+Beberapa besaran penting dalam GLB:
+| — Jarak (s)
+$$ BESARAN ) Panjang lintasan yang di tempuh benda.
+| — Waktu (t)
+Selang waktu yang diperlukan benda untuk
+menempuh jarak tertentu.
+— Kecepatan (v)
+Pebandingan antara jarak tempuh dengan waktu
+yang diperlukan.
+111
+111
+11
+1"
+1
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.26.jpeg ---
+
+Gerak lurus beraturan adalah gerak suatu benda pada
+lintasan lurus dengan kecepatan konstan, yang berarti
+kecepatannya tidak berubah setiap waktu. Karena
+kecepatannya konstan, maka benda yang mengalami GLB
+percepatannya nol.
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.27 (1).jpeg ---
+
+) Aa Grafik hubungan jarak (s) terhadap waktu (t) pada GLB
+berupa garis linear:
+
+10
+9
+PTS ERSAM, 8
+6
+juli. — GRAFIK 5
+E ) 1
+0
+
+0 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
+1
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.27.jpeg ---
+
+Persamaan dasar GLB adalah:
+v—Ss/t
+EK Dengan:
+s z jarak (m) h
+v z kecepatan (m/s) z An
+tx waktu (8) P EBA
+“EB.na
+1 aa
+SEA AD No BJ
+— aa 3 ,
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.28 (1).jpeg ---
+
+GLB dapat kita temui dalam kehidupan sehari-hari, misalnya
+ketika:
+- Mobil melaju dijalan tol dengan kecepatan tetap
+- Keretaapi bergerak di rel lurus dengan kecepatan
+konstan
+- Sepeda motor melaju lurus tanpa menambah atau
+mengurangi gas
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.28.jpeg ---
+
+) .
+p Fl! an
+De Grafik hubungan kecepatan (v) terhadap waktu (t) pada GLB
+berupa garis lurus:
+« 10
+9
+juli. — GRAFIK 5
+— 1
+)
+0 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
+
+
+--- WhatsApp Image 2026-05-14 at 10.14.29.jpeg ---
+
+Sebuah mobil melaju di jalan lurus dengan menempuh jarak
+300 meter dalam waktu 15 sekon. Maka berapa
+kecepatannya?
+Diketahui: Jawab:
+sz 300m v-s/t
+t-15s vz300m/15s
+v 20 m/s
+Ditanya: v 7 ?
+Ri

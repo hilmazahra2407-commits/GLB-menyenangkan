@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-secondary text-gray-800 font-sans;
+  }
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.4;
+  z-index: 0;
+  animation: float 20s infinite linear;
+}
+
+.shape.square {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #f6b9cf; /* accent */
+  border-radius: 12px;
+}
+
+.shape.circle {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #93d7e2; /* primary */
+  border-radius: 50%;
+}
+
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #c35e80; /* dark */
+  background: transparent;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-150px) rotate(180deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+.delay-1 { animation-delay: -2s; }
+.delay-2 { animation-delay: -5s; }
+.delay-3 { animation-delay: -9s; }
+.delay-4 { animation-delay: -14s; }
+.delay-5 { animation-delay: -18s; }
