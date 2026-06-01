@@ -11,16 +11,12 @@ const Landing = () => {
         transition={{ duration: 0.5, type: 'spring' }}
         className="max-w-3xl"
       >
-        <div className="mb-8 inline-block p-4 rounded-full bg-white/50 backdrop-blur shadow-xl">
-          <img src="/logo.png" alt="Logo" className="w-20 h-20 object-contain" />
+        <div className="mb-8 inline-block p-6 rounded-[2.5rem] bg-white/50 backdrop-blur shadow-xl">
+          <img src="/logo.png" alt="Logo" className="w-48 h-auto md:w-72 object-contain drop-shadow-md" />
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6 font-bubblegum tracking-wide">
-          GLB <span className="text-dark">Menyenangkan</span>
-        </h1>
-        
         <p className="text-xl md:text-2xl text-gray-700 mb-10 leading-relaxed font-medium">
-          Belajar Fisika (Gerak Lurus Beraturan) jadi lebih asik, interaktif, dan mudah dipahami dengan simulasi dan AI!
+          Belajar Fisika jadi lebih asik, interaktif, dan mudah dipahami dengan simulasi dan AI!
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
