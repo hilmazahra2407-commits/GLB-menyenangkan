@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Bell, Menu } from 'lucide-react';
+import { Volume2, VolumeX, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Sidebar from './Sidebar';
 
@@ -12,8 +12,18 @@ export const Layout = () => {
   const location = useLocation();
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  const [isMusicPlaying, setIsMusicPlaying] = useState(() => localStorage.getItem('glb_play_music') === 'true');
+
+  const toggleMusic = () => {
+    const newVal = !isMusicPlaying;
+    setIsMusicPlaying(newVal);
+    localStorage.setItem('glb_play_music', newVal.toString());
+    window.dispatchEvent(new Event('settingsChange'));
+  };
+
   const checkMusic = () => {
     const playMusic = localStorage.getItem('glb_play_music') === 'true';
+    setIsMusicPlaying(playMusic);
     if (audioRef.current) {
       if (playMusic) {
         audioRef.current.play().catch(e => console.log('Audio play failed:', e));
@@ -86,9 +96,12 @@ export const Layout = () => {
               <Menu size={24} />
             </button>
             <div className="flex items-center gap-4">
-              <button className="relative p-2 text-[#f6b9cf] hover:bg-[#fff0f5] rounded-full transition-colors">
-                <Bell size={24} />
-                <span className="absolute top-1 right-1 w-3 h-3 bg-[#c35e80] border-2 border-white rounded-full"></span>
+              <button 
+                onClick={toggleMusic}
+                className="relative p-2 text-[#4785c4] hover:bg-[#e0f0ff] rounded-full transition-colors"
+                title="Toggle Music"
+              >
+                {isMusicPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
               </button>
               
               <div className="flex items-center gap-3 pl-4 border-l border-gray-200">
